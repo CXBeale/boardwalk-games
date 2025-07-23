@@ -1,10 +1,35 @@
-h1 {
-  font-family: "Macondo", cursive;
-  
+/* CSS Variables */
+:root {
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #3a2620; /* Blue primary color */
+    --secondary-color: #aa9581; /* Beige secondary color */
+    --highlight-color: #416a8e; /* highlight color */
+    --highlight-color-light: #7a9fc2; /* light highlight color */
+   
 }
 
+/* Global Styles */
 
 body {
-  font-family: "Inter", sans-serif;
-  
+    font-family: var(--primary-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+.subheading-color {
+    color: var(--highlight-color);
+}
+
+.container ,
+.row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
 }
